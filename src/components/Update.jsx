@@ -25,7 +25,7 @@ export default function Update() {
   const Update = (e) => {
     e.preventDefault();
     axios
-      .post("http://localhost:4000/NewUser", { name, age, email })
+      .put("http://localhost:4000/Update/"+ id, { name, email, age })
       .then((result) => {
         console.log(result);
         Navigator("/");
