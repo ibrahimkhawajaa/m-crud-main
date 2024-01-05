@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap");
+
+@font-face {
+  font-family: "NewakeFont";
+  src: url(./fonts/NewakeFont-Demo.otf);
+}
+
+/*form input*/
+
+.form {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.form > input {
+  padding: 6px 12px;
+  background: rgb(31, 32, 35);
+  border: 1px solid rgb(60, 63, 68);
+  border-radius: 4px;
+  color: rgb(247, 248, 248);
+  width: 38%;
+  height: 16px;
+  appearance: none;
+  transition: border 0.15s ease 0s;
+  font-size: 10px;
+}
+
+.form > input:focus {
+  outline: none;
+  box-shadow: none;
+  border-color: rgb(100, 153, 255);
+}
+/*button css*/
+h1 {
+  font-family: NewakeFont;
+}
+.btn-user{
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  align-items: end;
+  justify-content: end;
+}
+.btn-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: #ffc300;
+}
+.btn {
+  display: grid;
+  place-items: center;
+  font-size: 12px;
+  color: white;
+  border: none;
+  padding: 5px 5px;
+  border-radius: 10px;
+  background-color: #29c6ed;
+  text-decoration: none;
+}
+/*css forms*/
+main {
+  display: grid;
+  place-items: center;
+}
+.rwd-table {
+  background: #34495e;
+  color: #fff;
+  border-radius: 0.4em;
+  overflow: hidden;
+}
+
+th {
+  font-family: NewakeFont;
+  letter-spacing: 1px;
+}
+td {
+  font-family: "Montserrat", sans-serif;
+}
+.rwd-table th,
+.rwd-table td {
+  margin: 0.5em 1em;
+  font-size: 12px;
+}
+
+@media (min-width: 480px) {
+  .rwd-table th,
+  .rwd-table td {
+    padding: 1em !important;
+  }
+}
+
+.rwd-table th,
+.rwd-table td:before {
+  color: #dd5;
+}
+
+/* More practical CSS */
+.rwd-table {
+  margin: 1em 0;
+  min-width: 300px;
+}
+
+.rwd-table th {
+  display: none; /* For accessibility, use a visually hidden method here instead! */
+}
+
+.rwd-table td {
+  display: block;
+}
+
+.rwd-table td:first-child {
+  padding-top: 1em;
+}
+
+.rwd-table td:last-child {
+  padding-bottom: 0.5em;
+}
+
+.rwd-table td:before {
+  content: attr(data-th) ": ";
+  font-weight: bold;
+  width: 7em;
+  display: inline-block;
+}
+
+@media (min-width: 480px) {
+  .rwd-table td:before {
+    display: none;
+  }
+}
+
+.rwd-table th,
+.rwd-table td {
+  text-align: left;
+}
+
+@media (min-width: 480px) {
+  .rwd-table th,
+  .rwd-table td {
+    display: table-cell;
+    padding: 0.25em 0.5em;
+  }
+
+  .rwd-table td:first-child {
+    padding-left: 0;
+  }
+
+  .rwd-table td:last-child {
+    padding-right: 0;
+  }
+}
